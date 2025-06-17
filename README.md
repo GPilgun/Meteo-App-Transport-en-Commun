@@ -9,4 +9,4 @@ des écrans des transports en commun, l’interface n'a aucun moteur de recherch
 Par contre, l’interface utilise un fichier de configuration (par exemple un fichier JSON)
 dans lequel l’entreprise de transport mettra le nom de la ville.
 
-Cette information est utilisée dans le code pour récupérer les bonnes données météo.
+Cette information est utilisée dans le code pour récupérer les bonnes données météo. 
