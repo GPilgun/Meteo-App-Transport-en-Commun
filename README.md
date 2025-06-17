@@ -1,7 +1,6 @@
 # Application Météo Simple pour Transports en Commun
 
-Une version d'application simple pour des interfaces météo destinées aux usagers des transports en commun.
-
+Une version d'application web simple qui affiche des données météorologiques destinées aux usagers des transports en commun.
 Ces interfaces seront affichées sur les écrans d’information dans les stations et dans les transports.
 
 ---
