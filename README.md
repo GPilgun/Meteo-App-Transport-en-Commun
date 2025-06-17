@@ -1,8 +1,18 @@
+
 # Application Météo Simple pour Transports en Commun
 
 Une version d'application web simple qui affiche des données météorologiques destinées aux usagers des transports en commun.
 
 Ces interfaces seront affichées sur les écrans d’information dans les stations et dans les transports.
+
+---
+
+## 🌐 Version en ligne
+
+- ✅ Version hébergée sur Netlify :
+      https://meteo-app-transport-en-commun.netlify.app/
+- 🐙 Ou via [GitHub Pages]  :
+     https://gpilgun.github.io/Meteo-App-Transport-en-Commun/
 
 ---
 
