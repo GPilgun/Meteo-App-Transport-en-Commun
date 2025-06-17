@@ -1,12 +1,24 @@
-Une version d'appli simple pour des interfaces météo pour les usagers des transports en commun.
+# Application Météo Simple pour Transports en Commun
 
-Ces interfaces seront affichées sur les écrans d’information dans les stations et dans les 
-transports.
+Une version d'application simple pour des interfaces météo destinées aux usagers des transports en commun.
 
-Car les écrans seront programmés avec des technologies web et intégrés dans le système
-des écrans des transports en commun, l’interface n'a aucun moteur de recherche pour trouver la localisation de la météo.
+Ces interfaces seront affichées sur les écrans d’information dans les stations et dans les transports.
 
-Par contre, l’interface utilise un fichier de configuration (par exemple un fichier JSON)
-dans lequel l’entreprise de transport mettra le nom de la ville.
+---
 
-Cette information est utilisée dans le code pour récupérer les bonnes données météo. 
+## Fonctionnalités
+
+- L’interface est conçue pour être intégrée dans les systèmes d’affichage des transports en commun.
+- Pas de moteur de recherche de localisation intégré.
+- Utilisation d’un fichier de configuration (par exemple un fichier JSON) pour définir la ville.
+- Le nom de la ville configuré est utilisé pour récupérer les données météo adéquates via une API.
+
+---
+
+## Usage
+
+L’entreprise de transport peut modifier le fichier `conf.json` pour changer la ville affichée.
+
+---
+
+*Développé pour simplifier l’affichage météo dans les environnements des transports publics.*
