@@ -22,7 +22,10 @@ async function chargerConfiguration() {
 
 // 2. Get weather data from wttr.in
 async function obtenirMeteo(city) {
-  const url = `https://wttr.in/${encodeURIComponent(city)}?format=j1`;
+  //const url = `https://wttr.in/${encodeURIComponent(city)}?format=j1`;//
+  const url = `https://api.open-meteo.com/${encodeURIComponent(city)}?format=j1`;
+   // ?latitude=48.85&longitude=2.35&current_weather=true&hourly=temperature_2m,wind_speed_10m"
+  
   const response = await fetch(url);
   if (!response.ok) throw new Error("Erreur de récupération des données météo.");
   const data = await response.json();
