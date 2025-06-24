@@ -20,16 +20,17 @@ async function chargerConfiguration() {
   return response.json();
 }
 
-// 2. Get weather data from wttr.in
-async function obtenirMeteo(city) {
-  //const url = `https://wttr.in/${encodeURIComponent(city)}?format=j1`;//
-  const url = `https://api.open-meteo.com/${encodeURIComponent(city)}?format=j1`;
-   // ?latitude=48.85&longitude=2.35&current_weather=true&hourly=temperature_2m,wind_speed_10m"
-  
-  const response = await fetch(url);
-  if (!response.ok) throw new Error("Erreur de récupération des données météo.");
-  const data = await response.json();
+// 2. Get weather data from 
 
+async function getWeatherstack(city) {
+    const response = await fetch(`http://api.weatherstack.com/current?query=${city}`);
+    const data = await response.json();
+
+    if (data.error) {
+        console.error(`Error: ${data.error.info}`);
+        return;
+    }
+  
   const condition = data.current_condition[0];
   const rawDescription = condition.weatherDesc[0].value;
 
@@ -46,6 +47,14 @@ async function obtenirMeteo(city) {
   description: translated
 };
 }
+
+//  const { location, current } = data;
+ //   console.log(`${location.name}, ${location.country}: ${current.weather_descriptions[0]}, ${current.temperature}°C`);
+}
+
+// Example usage
+getWeatherstack("New York");
+
 
 // 3. Display the weather in the HTML
 function afficherMeteo(city, data) {
